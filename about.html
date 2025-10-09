@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Snow Trails</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official website with three pages for lucas snow" />
+    <meta name="author" content="Aakriti, Emmanuel, Daria" />
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+
+<body id="aboutBody">
+    <header id="Website-Header">
+        <div id="imageIconContainer"></div>
+        <h1>Snow Trails</h1>
+        <div class="navButtonsContainer" id="navContainer">
+            <a href="./index.html">
+                <p>Home</p>
+            </a>
+            <a href="./about.html">
+                <p>About</p>
+            </a>
+            <a href="./contact.html">
+                <p>Contact</p>
+            </a>
+        </div>
+    </header>
+    <main id="sectionsGrouper">
+    <section id="aboutLandingPage"></section>
+    <section id="whoIsLucas">
+        <div id="aboutLucas"></div>
+        <div id="lucasImageContainer">
+            <div id="lucasImage"></div>
+            <h2>CEO SNOW TRAILS - LUCAS SNOW</h2>
+        </div>
+    </section>
+   </main>
+
+        <footer>
+        <div id="topFooter">
+            <div id="companyInfo">
+                <h2>Snow Trails</h2>
+                <p><strong>ADDRESS:</strong></br>123, Grangegorman upper or lower</br>Dublin 3(I think),</br>Rep. of
+                    Ireland. </p>
+                <p><strong>CONTACT:</strong></br>+224 89894 333</br>08 33422</br>snowtrailstravel@gmail.com</p>
+                <p>© 1998-2025 Snow Trails.</p>
+            </div>
+            <div class="topFooterDivider"> </div>
+            <div id="socialMediaIcons">
+                <p>Social Media Icons Soon</p>
+                <!--
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                -->
+            </div>
+            <div class="topFooterDivider"> </div>
+            <div id="emailSubmissionContainer">
+                <h2>NEWSLETTER</h2>
+                <form action="/somethingNotYet" method="post" target="blank">
+                    <div>
+                        <label for="firstName">FirstName:</label></br>
+                        <input required type="text" id="firstName" name="firstName"></br>
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label></br>
+                        <input required type="email" name="firstName" id="email"></br>
+                    </div>
+                    <button type="submit">Subscribe</button>
+
+                </form>
+            </div>
+
+        </div>
+        <div id="spareFooter"></div>
+        <div id="bottomFooter">
+            <div id="bottomFooterContainer">
+                <p>© 2025 AED Team • All rights reserved.</p>
+                <p>Terms and Conditions</p>
+                <p>Cookies Consent</p>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+            </div>
+        </div>
+    </footer>
+
+     <script>
+        window.addEventListener("scroll", function () {
+            const header = document.getElementById("Website-Header");
+            const nav = document.getElementById("navContainer")
+            if (window.scrollY > 100) {
+                header.classList.add("scrolled");
+                nav.classList.add("scrolled");
+
+
+            }
+            else {
+                header.classList.remove("scrolled");
+                nav.classList.remove("scrolled");
+            }
+        })
+    </script>
+</body>
+
+</html>
