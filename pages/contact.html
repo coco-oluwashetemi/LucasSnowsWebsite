@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--I think i will add a timer that counts down how many days to the next trip or something like that-->
+
 <head>
-    <title>About Snow Trails</title>
+    <title>Contact Snow Trails</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The official website with three pages for lucas snow" />
     <meta name="author" content="Aakriti, Emmanuel, Daria" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="icon" type="image/png" href="Media/favicon.png">
 </head>
 
-<body id="aboutBody">
-    <header id="Website-Header">
+<body id="contactBody">
+  
+   <header id="Website-Header">
         <div id="imageIconContainer"></div>
         <h1>Snow Trails</h1>
         <div class="navButtonsContainer" id="navContainer">
-            <a href="./index.html">
+            <a href="../index.html">
                 <p>Home</p>
             </a>
             <a href="./about.html">
@@ -25,21 +28,32 @@
             </a>
             <a href="./contact.html">
                 <p>Contact</p>
+                
             </a>
         </div>
     </header>
-    <main id="sectionsGrouper">
-    <section id="aboutLandingPage"></section>
-    <section id="whoIsLucas">
-        <div id="aboutLucas"></div>
-        <div id="lucasImageContainer">
-            <div id="lucasImage"></div>
-            <h2>CEO SNOW TRAILS - LUCAS SNOW</h2>
-        </div>
-    </section>
-   </main>
+   <main id="sectionsGrouper">
+    <div id="contactLanding">
 
-        <footer>
+    </div>
+    <div id="contactDiv">
+        <div id="contactBox">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="firstName" >First Name: </label><br>
+                <input id="firstName" type="text" name="firstName" required>
+                <label for="firstName" >Middle Name: </label><br>
+                <input id="firstName" type="text" name="firstName" required><br>
+                <label for="firstName" >Last Name: </label><br>
+                <input id="firstName" type="text" name="firstName" required><br>
+                <label for="emailAddress" >Email Address:</label>
+                <input type="email" required id="emailAddress">
+                
+            </form>
+        </div>
+    </div>
+   </main>
+     <footer>
         <div id="topFooter">
             <div id="companyInfo">
                 <h2>Snow Trails</h2>

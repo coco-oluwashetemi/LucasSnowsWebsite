@@ -1,0 +1,513 @@
+/*For now i don't know if we will be using the same css file for all three pages
+    or we will have different css files for each page.
+    let me know your thoughts. 
+*/
+
+@font-face {
+    font-family: 'nosifer';
+    src: url(fonts/NosiferCaps-Regular.ttf) format('truetype');
+}
+
+* {
+
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html,
+#mainBody,
+#aboutBody,
+#contactBody {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+/* This portion of css is for the home page */
+
+
+
+#mainBody {
+    background-image: url('../Media/homeBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*i am making the body height 3000px just until the whole page is done just for
+    scrollability maybe*/
+
+    background-attachment: fixed;
+
+
+}
+
+#Website-Header {
+    /*order-bottom:1px solid black;*/
+    background: transparent;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+#Website-Header.scrolled {
+    background: #fafafa;
+    margin-top: -2px;
+    border-bottom: 1px solid #9da0b6
+}
+
+
+#Website-Header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    /*start 25% from left */
+    width: 75%;
+    /*span 50% of header */
+    border-bottom: 1px solid black;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+#Website-Header.scrolled::after {
+
+    border-bottom: none;
+}
+
+body #Website-Header h1 {
+    font-family: "nosifer";
+    color: #1E3A5F;
+    /* icy blue */
+    font-size: 34px;
+    margin-left: -40%;
+}
+
+#imageIconContainer {
+    width: 85px;
+    height: 70px;
+    background-image: url('../Media/bannerImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+}
+
+.navButtonsContainer {
+    position: relative;
+    display: flex;
+
+    width: 417px;
+    height: 33px;
+    background: white;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    margin-right: 80px;
+    align-items: center;
+
+}
+
+#navContainer.scrolled {
+    border: 1px solid #ac8f8f
+}
+
+.navButtonsContainer a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navButtonsContainer a p {
+    font-family: 'poppins', sans-serif;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navButtonsContainer a p:hover {
+    border-bottom: 2px solid #da2c2c;
+}
+
+main {
+
+    background: #f8f9fa;
+    width: 100%;
+    color: #212529;
+
+}
+
+.landingPageMain {
+    margin-top: 1px;
+    background-image: url('../Media/mainLandingImage.png');
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 1px solid white;
+}
+
+.DividerHeading {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#sectionsDivider {
+    width: 90%;
+    background: rgb(75, 63, 63);
+    height: 1px;
+    margin-top: 38px;
+    margin-right: 30px;
+}
+
+.topPicksSection {
+
+    width: 99.5%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    height: 1500px;
+    padding-top: 15px;
+}
+
+#sectionsHeading {
+
+    width: 500px;
+    margin-left: 40px;
+    font-family: arial;
+
+}
+
+#topDestinationsContainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topPicksBox {
+    background: white;
+    height: 550px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+.moreDestinations {
+    border: 1px solid black;
+    margin: 50px auto;
+    width: 400px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.moreDestinations:hover {
+    background: #201f35;
+    color: white;
+}
+
+.moreDestinations p {
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+.ReviewsSection {
+    height: 2000px;
+
+}
+
+
+
+#latestReviewsBox {
+    height: 300px;
+    width: 1000px;
+    margin-top: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+    border: 3px solid rgb(65, 46, 46);
+    background: #ced0d6;
+}
+
+.leaveReview {
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 400px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leaveReview:hover {
+    background: #676688;
+    color: white;
+}
+
+.leaveReview p {
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.DestinationsSection {
+    margin-top: 100px;
+}
+
+#destinationsBox {
+    height: 500px;
+    width: 98%;
+    margin-top: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+    border: 3px solid rgb(65, 46, 46);
+    background: #ebe4e6;
+}
+
+
+
+footer {
+    background: #2d2d38;
+
+}
+
+#topFooter {
+    width: 100%;
+    background: #2d2d38;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+#companyInfo {
+
+    width: 400px;
+    height: 330px;
+    margin-left: 20px;
+    color: white;
+    text-align: justify;
+
+
+}
+
+#companyInfo h2 {
+    font-family: 'nosifer';
+}
+
+.topFooterDivider {
+    height: 300px;
+    width: 1px;
+    background: white;
+}
+
+#socialMediaIcons {
+    border: 1px solid white;
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(255, 248, 248);
+
+}
+
+#emailSubmissionContainer {
+
+    width: 400px;
+    height: 330px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#emailSubmissionContainer h2 {
+    font-family: 'poppins';
+}
+
+
+#emailSubmissionContainer input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+}
+
+#emailSubmissionContainer button {
+    width: 95%;
+    padding: 10px;
+    background-color: #616170;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#emailSubmissionContainer button:hover {
+    background-color: #45a049;
+}
+
+#spareFooter {
+    width: 75%;
+    background: black;
+    height: 1px;
+    margin: auto;
+}
+
+#bottomFooter {
+    background: #2d2d38;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#bottomFooterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+
+
+}
+
+
+
+
+/*This portion of css is for the about page*/
+
+
+#aboutBody {
+    background-image: url('../Media/aboutBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+
+#aboutLandingPage {
+    height: 1000px;
+    width: 100%;
+    background-image: url('../Media/aboutBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#whoIsLucas {
+    height: 800px;
+    width: 100%;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#aboutLucas {
+    background: #dfd6d6;
+    width: 60%;
+    height: inherit;
+}
+
+#lucasImageContainer {
+
+    width: 60%;
+    height: inherit;
+
+}
+
+#lucasImage {
+    background-image: url('../Media/lucasSnowImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 100px auto;
+    width: 500px;
+    background-color: #f5f0f0;
+
+}
+
+.LucasHeading {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+
+
+}
+
+
+/*this portion of css code is for the contact page*/
+
+#contactBody {
+ 
+    /*background-image: url('../Media/contactBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+    
+
+
+
+}
+
+#contactLanding {
+    height: 150px;
+
+}
+
+#contactDiv {
+    background:rgba(231, 232, 245, 0.667);
+    height: 1300px;
+    width:100%;
+  
+
+}
+
+#contactBox {
+    margin:auto;
+    width: 1000px;
+    height: 1000px;
+    background-color: #eee5e5;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#contactDiv #contactBox h1 {
+    text-align: center;
+    color: rgb(70, 63, 95);
+    margin-top:50px;
+
+}
