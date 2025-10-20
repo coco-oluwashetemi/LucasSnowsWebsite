@@ -291,6 +291,7 @@ main {
 
 footer {
     background: #2d2d38;
+    height: 500px;
 
 }
 
@@ -327,13 +328,35 @@ footer {
 }
 
 #socialMediaIcons {
-    border: 1px solid white;
     width: 400px;
-    height: 50px;
-    border: 1px solid rgb(255, 248, 248);
+    display:flex;
+    justify-content:space-between;
+    
 
 }
 
+.socialIcons{
+    width:40px;
+    height:40px;
+    filter: brightness(0) invert(1); 
+}
+
+.socialIcons.instagram{
+    background-image:url('../Media/instagram.svg');
+}
+.socialIcons.x{
+    background-image:url('../Media/x.svg');
+}
+
+.socialIcons.facebook{
+    background-image:url('../Media/facebook.svg');
+}
+.socialIcons.discord{
+    background-image:url('../Media/discord.svg');
+}
+.socialIcons.whattsapp{
+    background-image:url('../Media/whatsapp.svg');
+}
 #emailSubmissionContainer {
 
     width: 400px;
@@ -383,7 +406,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
 
 }
 
@@ -489,25 +511,75 @@ footer {
 }
 
 #contactDiv {
-    background:rgba(231, 232, 245, 0.667);
+    background:rgba(238, 240, 241, 0.667);
     height: 1300px;
     width:100%;
-  
+    font-family:'Poppins';
+    display:flex;
+}
 
+form div {
+    
 }
 
 #contactBox {
     margin:auto;
     width: 1000px;
-    height: 1000px;
-    background-color: #eee5e5;
+    background-color: #fafafa;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(128, 82, 118);
+    padding-left: 50px;
 }
 
 #contactDiv #contactBox h1 {
     text-align: center;
     color: rgb(70, 63, 95);
     margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
 
+form label{
+    display:inline-block;
+    font-weight:bold;
+    font-size:20px;
+    font-family:'poppins';
+    margin-top:20px;
+
+}
+
+form input, form select{
+    width:400px;
+    height:40px;
+    border-radius:5px;
+    margin-top: 20px;
+    height:45px;
+}
+
+
+#contactNameInput{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    row-gap:10px;
+    column-gap:50px;
+    flex-direction:row;
+    
+}
+
+#submitForm #address1, #submitForm #address2,#submitForm #address3 {
+    width:90%;
+
+} 
+
+#phoneEmail{
+    
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#comments{
+    width:75%;
+    height:200px;
 }

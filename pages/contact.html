@@ -15,8 +15,8 @@
 </head>
 
 <body id="contactBody">
-  
-   <header id="Website-Header">
+
+    <header id="Website-Header">
         <div id="imageIconContainer"></div>
         <h1>Snow Trails</h1>
         <div class="navButtonsContainer" id="navContainer">
@@ -28,32 +28,67 @@
             </a>
             <a href="./contact.html">
                 <p>Contact</p>
-                
+
             </a>
         </div>
     </header>
-   <main id="sectionsGrouper">
-    <div id="contactLanding">
+    <main id="sectionsGrouper">
+        <div id="contactLanding">
 
-    </div>
-    <div id="contactDiv">
-        <div id="contactBox">
-            <h1>Contact Us</h1>
-            <form>
-                <label for="firstName" >First Name: </label><br>
-                <input id="firstName" type="text" name="firstName" required>
-                <label for="firstName" >Middle Name: </label><br>
-                <input id="firstName" type="text" name="firstName" required><br>
-                <label for="firstName" >Last Name: </label><br>
-                <input id="firstName" type="text" name="firstName" required><br>
-                <label for="emailAddress" >Email Address:</label>
-                <input type="email" required id="emailAddress">
-                
-            </form>
         </div>
-    </div>
-   </main>
-     <footer>
+        <div id="contactDiv">
+            <div id="contactBox">
+                <h1>Contact Us</h1>
+                <form id="submitForm" target="blank" action="./somewhere">
+                    <div>
+                        <label for="firstName">Name </label><br>
+                        <div id="contactNameInput">
+                            <input id="firstName" type="text" name="firstName" placeholder="First Name" required>
+                            <input id="MiddleName" type="text" name="firstName"
+                                placeholder="Middle Name (optional)"><br>
+                            <input id="LastName" type="text" name="firstName" required placeholder="Last Name"><br>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="firstName">Address </label><br>
+                        <div id="contactAddress">
+                            <input id="address1" type="text" name="address1" placeholder="Address Line 1" required><br>
+                            <input id="address2" type="text" name="address2"
+                                placeholder="Address Line 2 (optional)"><br>
+                            <input id="address3" type="text" name="address3"
+                                placeholder="Address Line 3 (optional)"><br>
+                            <select id="countryOptions" placeholder="Country">
+                                <option value="" selected hidden disabled>Select a country</option>
+
+                            </select>
+
+                            <input id="zipCode" type="text" placeholder="Zip-Code"><br>
+                        </div>
+                        <div id="phoneEmail">
+                        <div id="phoneCollection">
+                            <label for="phoneNumber">Telephone</label>
+                            <input type="text" id="phoneNumber" placeholder="e.g +353899629075">
+                            
+                        </div>
+
+                        <div id="EmailCollection">
+                            <label for="emailAddress">Email Address:</label>
+                            <input type="email" required id="emailAddress">
+                        </div>
+                        </div>
+
+                        <div>
+                            <label for="comments">Comments</label><br>
+                            <input id="comments" type="text" >
+                        </div>
+                        
+                        <button type="submit" id="contactSubmit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
         <div id="topFooter">
             <div id="companyInfo">
                 <h2>Snow Trails</h2>
@@ -64,12 +99,22 @@
             </div>
             <div class="topFooterDivider"> </div>
             <div id="socialMediaIcons">
-                <p>Social Media Icons Soon</p>
-                <!--
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                -->
+
+                <a href="">
+                    <div class="socialIcons instagram"></div>
+                </a>
+                <a href="">
+                    <div class="socialIcons x"></div>
+                </a>
+                <a href="">
+                    <div class="socialIcons discord"></div>
+                </a>
+                <a href="">
+                    <div class="socialIcons whattsapp"></div>
+                </a>
+                <a href="">
+                    <div class="socialIcons facebook"></div>
+                </a>
             </div>
             <div class="topFooterDivider"> </div>
             <div id="emailSubmissionContainer">
@@ -81,7 +126,7 @@
                     </div>
                     <div>
                         <label for="email">Email Address:</label></br>
-                        <input required type="email" name="firstName" id="email"></br>
+                        <input required type="email" name="email" id="email"></br>
                     </div>
                     <button type="submit">Subscribe</button>
 
@@ -101,7 +146,7 @@
         </div>
     </footer>
 
-     <script>
+    <script>
         window.addEventListener("scroll", function () {
             const header = document.getElementById("Website-Header");
             const nav = document.getElementById("navContainer")
@@ -116,6 +161,77 @@
                 nav.classList.remove("scrolled");
             }
         })
+
+        const countries = [
+            "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Argentina",
+            "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
+            "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin",
+            "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil",
+            "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon",
+            "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile",
+            "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Croatia",
+            "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica",
+            "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Estonia",
+            "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia",
+            "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala",
+            "Guinea", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India",
+            "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica",
+            "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kuwait",
+            "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia",
+            "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar",
+            "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Mexico", "Moldova",
+            "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Namibia",
+            "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria",
+            "North Macedonia", "Norway", "Oman", "Pakistan", "Panama", "Paraguay",
+            "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia",
+            "Rwanda", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone",
+            "Singapore", "Slovakia", "Slovenia", "South Africa", "South Korea", "Spain",
+            "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria",
+            "Taiwan", "Tanzania", "Thailand", "Togo", "Trinidad and Tobago", "Tunisia",
+            "Turkey", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom",
+            "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela",
+            "Vietnam", "Yemen", "Zambia", "Zimbabwe"];
+
+        const select = document.getElementById("countryOptions");
+        select.placeholder =
+            countries.forEach(country => {
+
+                const option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                select.appendChild(option);
+            });
+
+        const phoneInput = document.getElementById("phoneNumber");
+        const phoneChecker = /^\+\d{9,15}$/;
+        const submit = document.getElementById('contactSubmit');
+
+        phoneChecker.addEventListener("input", () => {
+            const validatePhoneNumber = phoneChecker.test(phoneInput.value);
+            if (validatePhoneNumber == true) {
+
+            }
+            else {
+                alert("")
+            }
+
+        })
+
+
+        submit.addEventListener("click", () => {
+            if (validatePhoneNumber == true) {
+
+            }
+            else {
+                alert("Please input a correct international phone number");
+            }
+        })
+
+
+
+
+
+
     </script>
 </body>
 
