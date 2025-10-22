@@ -525,7 +525,8 @@ form div {
 #contactBox {
     margin:auto;
     width: 1000px;
-    background-color: #fafafa;
+    height:1100px;
+    background-color: #544f4f;
     border-radius: 20px;
     border: 1px solid rgb(128, 82, 118);
     padding-left: 50px;
@@ -573,6 +574,12 @@ form input, form select{
 
 } 
 
+#countryZip{
+    display:flex;
+    justify-content:flex-start;
+    column-gap:54px;
+}
+
 #phoneEmail{
     
     display:flex;
@@ -582,4 +589,16 @@ form input, form select{
 #comments{
     width:75%;
     height:200px;
+    
+}
+
+#contactSubmit{
+    width:200px;
+    height:55px;
+    background-color:#eaeaea;
+    font-family: 'poppins';
+    margin-top:40px;
+    border-radius:25px;
+    text-align:center;
+    font-size:25px;
 }
