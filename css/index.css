@@ -493,51 +493,51 @@ footer {
 /*this portion of css code is for the contact page*/
 
 #contactBody {
- 
-    /*background-image: url('../Media/contactBackground.jpg');
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+
+
+#contactDiv {
+
+    background-image: url('../Media/contactBackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    */
-    
-
-
-
-}
-
-#contactLanding {
-    height: 150px;
-
-}
-
-#contactDiv {
-    background:rgba(238, 240, 241, 0.667);
     height: 1300px;
     width:100%;
     font-family:'Poppins';
     display:flex;
-}
-
-form div {
     
 }
 
+
+
 #contactBox {
-    margin:auto;
+    margin-top:200px;
+    margin-left:50px;
     width: 1000px;
     height:1100px;
-    background-color: #544f4f;
+    background-color: transparent;
     border-radius: 20px;
-    border: 1px solid rgb(128, 82, 118);
+   
     padding-left: 50px;
 }
 
 #contactDiv #contactBox h1 {
-    text-align: center;
+    text-align:left;
     color: rgb(70, 63, 95);
     margin-top:50px;
     margin-left:auto;
     margin-right:auto;
+    
    
 }
 
@@ -593,12 +593,16 @@ form input, form select{
 }
 
 #contactSubmit{
-    width:200px;
+    width:150px;
     height:55px;
     background-color:#eaeaea;
     font-family: 'poppins';
     margin-top:40px;
-    border-radius:25px;
+    border-radius:7px;
     text-align:center;
-    font-size:25px;
+}
+
+#contactSubmit:hover{
+    background-color:#c6c6c6;
+    cursor:pointer;
 }
