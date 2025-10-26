@@ -5,14 +5,13 @@
 
 @font-face {
     font-family: 'nosifer';
-    src: url(fonts/NosiferCaps-Regular.ttf) format('truetype');
+    src: url(../fonts/NosiferCaps-Regular.ttf) format('truetype');
 }
 
 * {
 
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
 }
 
 html,
@@ -290,133 +289,120 @@ main {
 
 
 footer {
-    background: #2d2d38;
-    height: 500px;
-
+    background-color: #0a1b31;
+    height: 550px;
+    font-family:"cinzel";
+   
 }
 
-#topFooter {
-    width: 100%;
-    background: #2d2d38;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-
-}
-
-#companyInfo {
-
-    width: 400px;
-    height: 330px;
-    margin-left: 20px;
-    color: white;
-    text-align: justify;
-
-
-}
-
-#companyInfo h2 {
-    font-family: 'nosifer';
-}
-
-.topFooterDivider {
-    height: 300px;
-    width: 1px;
-    background: white;
-}
-
-#socialMediaIcons {
-    width: 400px;
+footer #topFooter{
+    width:100%;
+    height:70%;
+    background:transparent;
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-start;
+}
+
+footer #topFooter div{
+   
+    width:32.34%;
+    height:70%;
+    margin:auto;
+    padding-left:20px;
+    font-family:"cinzel";
+    color:#fafafa;
+}
+
+
+footer #topFooter #footerLogo{
+    border:5px solid white;
+    width:70%;
+    height:40%;
+    display:flex;
+    font-family:'nosifer';
+    margin-top:80px;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    font-size:26.5px;
+}
+
+
+
+
+footer #topFooter #footer2{
+    display:flex;
     
-
 }
 
-.socialIcons{
-    width:40px;
-    height:40px;
-    filter: brightness(0) invert(1); 
-}
-
-.socialIcons.instagram{
-    background-image:url('../Media/instagram.svg');
-}
-.socialIcons.x{
-    background-image:url('../Media/x.svg');
-}
-
-.socialIcons.facebook{
-    background-image:url('../Media/facebook.svg');
-}
-.socialIcons.discord{
-    background-image:url('../Media/discord.svg');
-}
-.socialIcons.whattsapp{
-    background-image:url('../Media/whatsapp.svg');
-}
-#emailSubmissionContainer {
-
-    width: 400px;
-    height: 330px;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-#emailSubmissionContainer h2 {
-    font-family: 'poppins';
+footer #topFooter #footer2 div{
+    margin-top:20px;
+    height:85%;
+    width:47%;
+    
 }
 
 
-#emailSubmissionContainer input {
-    width: 90%;
-    padding: 8px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 6px;
+
+footer #topFooter #footer2 #siteMap div{
+    height:30px;
+    margin-left:-17px;
+    text-align:left;
+    
+}
+footer #topFooter #footer2 #socials div{
+    height:30px;
+    margin-left:-17px;
+    text-align:left;
+    
 }
 
-#emailSubmissionContainer button {
-    width: 95%;
-    padding: 10px;
-    background-color: #616170;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+#footer2 #siteMap div a, #footer2 #socials div a{
+    text-decoration: none;
+    color:#fafafa;
 }
 
-#emailSubmissionContainer button:hover {
-    background-color: #45a049;
+#footer2 .socialIcons{
+    width:200px;
+    height:30px;
+    margin-right:50px;
 }
 
-#spareFooter {
-    width: 75%;
-    background: black;
-    height: 1px;
-    margin: auto;
+#footerEmail{
+    background:transparent;
+    border-bottom: 1px solid white;
+    border-top:none;
+    border-right:none;
+    border-left:none;
 }
 
-#bottomFooter {
-    background: #2d2d38;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#footerDivider{
+    width:70%;
+    background:#fafafa;
+    height:0.1px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
 }
 
-#bottomFooterContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
+footer #lowerFooter{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    height:140px;
+    color:white;
 
+}
+footer #lowerFooter #copyrightContainer{
+    width:50%;
+    height:60%;
+    margin-top:40px;
+    padding-left:20px;
+    width:65%
+}
 
-
+footer #lowerFoter #privacyPolicy{
+    width:50%;
 }
 
 
@@ -511,18 +497,19 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 1300px;
+    height: 1600px;
     width:100%;
     font-family:'Poppins';
     display:flex;
+
     
 }
 
 
 
 #contactBox {
-    margin-top:200px;
-    margin-left:50px;
+    margin-top:100px;
+    margin-left:auto;
     width: 1000px;
     height:1100px;
     background-color: transparent;
