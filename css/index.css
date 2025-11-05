@@ -806,16 +806,18 @@ form select {
     height: 15vh;
     width: 90%;
     margin-top: 1%;
+
 }
 
 #phoneEmail div {
-
+   
     width: 50%;
 
 }
 
 #phoneEmail div input {
-    width: 80%;
+    width: 85%;
+    
 }
 
 #emailCollection {
