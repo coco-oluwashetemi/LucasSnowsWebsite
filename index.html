@@ -23,14 +23,18 @@ particular things like that i don't know -->
 <body id="mainBody">
     <header id="Website-Header">
         <div id="imageIconContainer"></div>
-        <h1>Snow Trails</h1>
+        <h1 id="navH1">Snow Trails</h1>
         <div class="navButtonsContainer" id="navContainer">
             <a aria-label="click here to go to our home page" href="index.html">
                 <p>Home</p>
             </a>
+            <a href="pages/services.html" aria-label="click here to go to our about page">
+                <p>Services</p>
+            </a>
             <a href="pages/about.html" aria-label="click here to go to our about page">
                 <p>About</p>
             </a>
+            
             <a href="pages/contact.html" aria-label="click here to go to our contact page">
                 <p>Contact</p>
             </a>
@@ -284,16 +288,18 @@ particular things like that i don't know -->
     <script>
         window.addEventListener("scroll", function () {
             const header = document.getElementById("Website-Header");
-            const nav = document.getElementById("navContainer")
+            const nav = document.getElementById("navContainer");
+            const navH1 = document.getElementById("navH1");
             if (window.scrollY > 100) {
                 header.classList.add("scrolled");
                 nav.classList.add("scrolled");
-
+                navH1.classList.add("scrolled");
 
             }
             else {
                 header.classList.remove("scrolled");
                 nav.classList.remove("scrolled");
+                navH1.classList.remove("scrolled");
             }
         })
     </script>

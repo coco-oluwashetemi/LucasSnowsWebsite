@@ -8,6 +8,269 @@
     src: url(../fonts/NosiferCaps-Regular.ttf) format('truetype');
 }
 
+/* Base styles remain the same — only responsive changes added below */
+
+/* Small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+
+    /* Header */
+    #Website-Header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #Website-Header h1 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .navButtonsContainer {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 0.9rem;
+    }
+
+    /* Landing sections */
+    #landingCall h1,
+    #AboutLandingCall h1 {
+        font-size: 2rem;
+    }
+
+    #landingCall p {
+        font-size: 1rem;
+    }
+
+    /* Quick About */
+    #quickAbout {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #quickAbout div {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Services */
+    #servicesBoxes {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #servicesBoxesBoxes {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Countries */
+    .countriesBoxes {
+        flex-direction: column;
+    }
+
+    .countryContainer {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    #countriesWeVisit button {
+        width: 60%;
+    }
+
+    /* About Lucas */
+    #whoIsLucas {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #aboutLucas,
+    #lucasImageContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    #lucasImage {
+        width: 250px;
+        height: 250px;
+        margin: 40px auto;
+        background-position: center;
+    }
+
+    /* Contact */
+    #contactBox {
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    form input,
+    form select {
+        width: 100%;
+    }
+
+    #phoneEmail {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #phoneEmail div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #comments {
+        width: 100%;
+    }
+
+    #contactSubmit {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer #topFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer #topFooter div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    footer #lowerFooter {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+/* Medium devices (tablets, 601px–900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    /* Header */
+    #Website-Header h1 {
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+
+    .navButtonsContainer {
+        width: 70%;
+    }
+
+    /* Quick About */
+    #quickAbout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #quickAbout div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Services */
+    #servicesBoxes {
+        flex-wrap: wrap;
+    }
+
+    #servicesBoxesBoxes {
+        width: 45%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Countries */
+    .countriesBoxes {
+        flex-wrap: wrap;
+    }
+
+    .countryContainer {
+        width: 45%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    #countriesWeVisit button {
+        width: 40%;
+    }
+
+    /* About Lucas */
+    #whoIsLucas {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #aboutLucas,
+    #lucasImageContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    #lucasImage {
+        width: 350px;
+        height: 350px;
+        margin: 60px auto;
+    }
+
+    /* Contact */
+    #contactBox {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    form input,
+    form select {
+        width: 90%;
+    }
+
+    #phoneEmail {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #phoneEmail div {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    #comments {
+        width: 90%;
+    }
+
+    #contactSubmit {
+        width: 60%;
+    }
+
+    /* Footer */
+    footer #topFooter {
+        flex-wrap: wrap;
+    }
+
+    footer #topFooter div {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    footer #lowerFooter {
+        flex-wrap: wrap;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+/* Large devices (desktops, 901px and up) */
+@media (min-width: 901px) {
+    /* Keep your original desktop styles */
+}
+
 * {
 
     box-sizing: border-box;
@@ -15,20 +278,21 @@
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 html,
 #mainBody,
 #aboutBody,
-#contactBody {
+#contactBody,
+#servicesBody {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -54,7 +318,7 @@ html,
 }
 
 #Website-Header {
-    /*order-bottom:1px solid black;*/
+
     background: transparent;
     height: 15%;
     width: 100%;
@@ -62,7 +326,7 @@ html,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background 0.4s ease, box-shadow 0.4s ease;
+    transition: background 0.6s ease, box-shadow 0.4s ease;
     margin-top: -1%;
     z-index: 4;
 }
@@ -71,7 +335,8 @@ html,
     z-index: 4;
     background: #fafafa;
     margin-top: -1%;
-    border-bottom: 1px solid #9da0b6
+    border-bottom: 1px solid #9da0b6;
+    transition: background 0.6s ease, box-shadow 0.4s ease;
 }
 
 
@@ -83,21 +348,24 @@ html,
     left: 12%;
     width: 75%;
     border-bottom: 1px solid black;
-    transition: background 0.4s ease, box-shadow 0.4s ease;
+    transition: background 0.6s ease, box-shadow 0.4s ease;
 }
 
 #Website-Header.scrolled::after {
     z-index: 4;
     border-bottom: none;
+    transition: background 0.6s ease, box-shadow 0.4s ease;
 }
 
 #Website-Header h1 {
     font-family: "nosifer";
-    color: #1E3A5F;
+    color: #ffffff;
     font-size: 2rem;
     margin-left: -25%;
     z-index: 4;
+    transition: background 0.6s ease, box-shadow 0.4s ease;
 }
+
 
 #imageIconContainer {
     z-index: 4;
@@ -125,6 +393,10 @@ html,
 
 #navContainer.scrolled {
     border: 1px solid #ac8f8f
+}
+
+#navH1.scrolled {
+    color: #1E3A5F;
 }
 
 .navButtonsContainer a {
@@ -185,7 +457,6 @@ main {
     text-align: center;
     color: #eaeaea;
     font-family: 'poppins', sans-serif;
-    ;
     z-index: 1;
 
 }
@@ -295,14 +566,14 @@ main {
 #ourServices h1 {
     text-align: center;
     color: rgb(37, 75, 136);
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
 #ourServices h2 {
-     text-align: center;
+    text-align: center;
     color: rgb(14, 37, 72);
-    font-size:1.8rem;
-    margin-top:-0.5%;
+    font-size: 1.8rem;
+    margin-top: -0.5%;
 }
 
 #servicesBoxes {
@@ -329,187 +600,212 @@ main {
     background-size: cover;
     background-position: center;
 }
+
 .winterHolidayTripsImage {
     background-image: url('../Media/servicesImage2.jpg');
     background-size: cover;
     background-position: center;
-  
+
 }
+
 .plannedFunActivities {
-    background-image:url('../Media/servicesImage3.jpg');
+    background-image: url('../Media/servicesImage3.jpg');
     background-size: cover;
     background-position: center;
 }
+
 .hoterBookings {
     background-image: url('../Media/servicesImages4.jpg');
     background-size: cover;
     background-position: center;
 }
 
-#countriesWeVisit{
-    background:#97b993;
-    font-family:'poppins';
-    margin:0;
-    padding-top:3%;
-    width:100%;
-    height:200vh;
+#countriesWeVisit {
+    background: #97b993;
+    font-family: 'poppins';
+    margin: 0;
+    padding-top: 3%;
+    width: 100%;
+    height: 200vh;
 }
-#countriesWeVisitHeading{
-    height:20%;
+
+#countriesWeVisitHeading {
+    height: 20%;
 }
 
 #countriesWeVisitHeading h1 {
-    text-align:center;
-    font-size:1.4rem;
-    color:#a61e1e;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #a61e1e;
 }
+
 #countriesWeVisitHeading h2 {
-    text-align:center;
-    font-size:1rem;
-    color:#5d5b5b;
-    width:80%;
-    margin:auto;
- 
-}
-
-#countriesMainBox{
-    margin-top:-8%;
-    width:100%;
-    height:70%;
-}
-#countriesh2s{
-    font-size:1.2rem;
-    color:#de1212;
-    font-weight:bold;
-    margin-left:4%;
-    margin-top:5%;
-}
-.countriesBoxes{
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
+    text-align: center;
+    font-size: 1rem;
+    color: #5d5b5b;
+    width: 80%;
+    margin: auto;
 
 }
-.countryContainer{
-    width:15%;
-    height:30vh;
-    border-radius:8px;
-    position:relative;
-    color:white;
-    font-size:1rem;
-    font-family:sans-serif;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:bolder;
+
+#countriesMainBox {
+    margin-top: -8%;
+    width: 100%;
+    height: 70%;
 }
 
-.countryContainer p{
-    z-index:1;
+#countriesh2s {
+    font-size: 1.2rem;
+    color: #de1212;
+    font-weight: bold;
+    margin-left: 4%;
+    margin-top: 5%;
 }
 
-.countryContainer::before{
-    content:"";
+.countriesBoxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.countryContainer {
+    width: 15%;
+    height: 30vh;
+    border-radius: 8px;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.countryContainer p {
+    z-index: 1;
+}
+
+.countryContainer::before {
+    content: "";
     position: absolute;
     z-index: 0;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
-    border-radius:8px;
+    border-radius: 8px;
 }
 
-#switzerland{
+#switzerland {
     background-image: url('../Media/switzerLand.jpg');
     background-size: cover;
     background-position: center;
 }
-#canada{
+
+#canada {
     background-image: url('../Media/canada.jpg');
     background-size: cover;
     background-position: center;
 }
-#austria{
+
+#austria {
     background-image: url('../Media/austria.jpg');
     background-size: cover;
     background-position: center;
 }
-#norway{
+
+#norway {
     background-image: url('../Media/norway.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#finland{
+
+#finland {
     background-image: url('../Media/finland.jpg');
     background-size: cover;
-    background-position: center;    
-} 
-#iceland{
+    background-position: center;
+}
+
+#iceland {
     background-image: url('../Media/iceland.jpg');
     background-size: cover;
-    background-position: center;    
-} 
-#czechRepublic{
+    background-position: center;
+}
+
+#czechRepublic {
     background-image: url('../Media/czech.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#japan{
+
+#japan {
     background-image: url('../Media/japan.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#france{
+
+#france {
     background-image: url('../Media/france.jpg');
     background-size: cover;
     background-position: center;
 }
-#germany{
+
+#germany {
     background-image: url('../Media/germany.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#slovenia{
+
+#slovenia {
     background-image: url('../Media/slovenia.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#poland{
+
+#poland {
     background-image: url('../Media/poland.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#sweeden{
+
+#sweeden {
     background-image: url('../Media/sweeden.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#newZealand{
+
+#newZealand {
     background-image: url('../Media/newZealand.jpg');
     background-size: cover;
-    background-position: center;   
-     
+    background-position: center;
+
 }
-#usa{
+
+#usa {
     background-image: url('../Media/usa.jpg');
     background-size: cover;
-    background-position: center;    
+    background-position: center;
 }
-#countriesWeVisit button{
-    width:10%;
-    height:3.2%;
-    margin-left:4%;
-    border-radius:6px;
+
+#countriesWeVisit button {
+    width: 10%;
+    height: 3.2%;
+    margin-left: 4%;
+    border-radius: 6px;
     transition: all 0.7s ease;
-    border:1px solid rgb(80, 55, 55);
+    border: 1px solid rgb(80, 55, 55);
 }
-#countriesWeVisit button:hover{
-    width:18%;
-    height:3.2%;
-    margin-left:4%;
-    cursor:pointer;
-    background:#9b8787;
+
+#countriesWeVisit button:hover {
+    width: 18%;
+    height: 3.2%;
+    margin-left: 4%;
+    cursor: pointer;
+    background: #9b8787;
 
 
 }
+
 footer {
     background-color: #0a1b31;
     height: 82vh;
@@ -630,8 +926,112 @@ footer #lowerFoter #privacyPolicy {
     width: 50%;
 }
 
+/*This portion of css is for the services page*/
+#servicesBody {
+    background-image: url('../Media/aboutBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+#servicesLandingPage {
+    height: 100vh;
+    width: 100%;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+        /* dark on left to transparent on right */
+        url('../Media/servicesLandingImage.jpg');
+    /* your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
 
+#servicesLandingCall {
+
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#servicesLandingCall h1 {
+    font-family: 'nosifer';
+    font-size: 1.7rem;
+    color: #ceeefd;
+}
+
+#servicesLandingCall p {
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #d5e4eb;
+}
+
+#ServicesSections {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    background: #f9f9f9;
+    justify-content: space-evenly;
+    padding: auto;
+
+}
+
+#ServicesSections div {
+    
+    width: 45%;
+    height: 80%;
+    margin: auto;
+}
+#ImageServices{
+    border-radius:15px;
+}
+.consultationImage{
+    background-image: url('../Media/consultationServiceImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.HolidayTripsImage{
+    background-image: url('../Media/secondServiceImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ActivitiesImage{
+    background-image: url('../Media/thirdServicesImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.HotelImage{
+    background-image: url('../Media/lastServicesImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#servicesH1 {
+    font-size: 1.3rem;
+    font-family: 'poppins';
+    color: #3a3636
+}
+
+#servicesH2 {
+    font-size: 1.6rem;
+    font-family: 'poppins';
+    color: #3a3636
+}
+
+#servicesP {
+    font-size: 1rem;
+    font-family: 'poppins';
+    color: #3a3636
+}
 
 /*This portion of css is for the about page*/
 
@@ -647,13 +1047,94 @@ footer #lowerFoter #privacyPolicy {
 }
 
 #aboutLandingPage {
-    height: 1000px;
+    height: 100vh;
     width: 100%;
-    background-image: url('../Media/aboutBanner.png');
+    background-image: url('../Media/aboutlandingImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+#aboutLandingPage::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* semi-black overlay */
+}
+
+#AboutLandingCall {
+    background: transparent;
+    text-align: center;
+    color: #eaeaea;
+    font-family: 'poppins', sans-serif;
+    z-index: 1;
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: sticky;
+    top: 4rem;
+}
+
+#AboutLandingCall h1 {
+    font-size: 4rem;
+    position: absolute;
+}
+
+#originStory {
+    height: 90vh;
+    width: 100%;
+    background: #fffcfc;
+
+}
+
+#historyBox {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 50%;
+    background: #fcf7f7;
+}
+
+#historyBox h1,
+#historyBox p {
+    margin: 0;
+}
+
+#secondAboutSection {
+    background: #f0f8ff;
+    height: 80vh;
+    width: 100%;
+
+
+}
+
+#phylosophyBox {
+    display: flex;
+    justify-content: center;
+}
+
+#phylosophyBox div {
+    width: 40%;
+    border-bottom: 1px solid rgb(185, 177, 177);
+}
+
+#statsBox {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top:5rem;
+}
+
+#statsBox div {
+    width:25%;
 
 }
 
@@ -700,6 +1181,10 @@ footer #lowerFoter #privacyPolicy {
 
 }
 
+#customerReviews {
+    background: #fafafa;
+
+}
 
 /*this portion of css code is for the contact page*/
 
@@ -810,14 +1295,14 @@ form select {
 }
 
 #phoneEmail div {
-   
+
     width: 50%;
 
 }
 
 #phoneEmail div input {
     width: 85%;
-    
+
 }
 
 #emailCollection {
