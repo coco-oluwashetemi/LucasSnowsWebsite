@@ -982,33 +982,38 @@ footer #lowerFoter #privacyPolicy {
 }
 
 #ServicesSections div {
-    
+
     width: 45%;
     height: 80%;
     margin: auto;
 }
-#ImageServices{
-    border-radius:15px;
+
+#ImageServices {
+    border-radius: 15px;
 }
-.consultationImage{
+
+.consultationImage {
     background-image: url('../Media/consultationServiceImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.HolidayTripsImage{
+
+.HolidayTripsImage {
     background-image: url('../Media/secondServiceImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.ActivitiesImage{
+
+.ActivitiesImage {
     background-image: url('../Media/thirdServicesImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.HotelImage{
+
+.HotelImage {
     background-image: url('../Media/lastServicesImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -1049,14 +1054,14 @@ footer #lowerFoter #privacyPolicy {
 #aboutLandingPage {
     height: 100vh;
     width: 100%;
-    background-image: url('../Media/aboutlandingImage.jpg');
+    background-image: url('../Media/aboutLandingImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
 }
 
 #aboutLandingPage::before {
@@ -1065,7 +1070,7 @@ footer #lowerFoter #privacyPolicy {
     z-index: 0;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
-   
+
 }
 
 #AboutLandingCall {
@@ -1080,158 +1085,263 @@ footer #lowerFoter #privacyPolicy {
     justify-content: center;
     align-items: center;
     margin: auto;
-    position: sticky;
     top: 4rem;
+
 }
 
 #AboutLandingCall h1 {
     font-size: 4rem;
     position: absolute;
-    display:flex;
-   
+    display: flex;
+    width: inherit;
 
 }
 
 #originStory {
     height: 100vh;
     width: 100%;
-   /* background-image: url("../Media/ourHistoryImage.jpg");
+    /* background-image: url("../Media/ourHistoryImage.jpg");
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;*/
-    background:rgb(37, 37, 8);
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background: rgb(37, 37, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#historyHeading{
-    margin-top:0;
-    height:100%;
-    width:36%;
+
+#historyHeading {
+    margin-top: 0;
+    height: 100%;
+    width: 36%;
     background-image: url("../Media/historyBanner.jpg");
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
-#historyHeading::before{
-    content:"";
-    position:absolute;
+
+#historyHeading::before {
+    content: "";
+    position: absolute;
     z-index: 0;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
-    z-index:1;
+    z-index: 1;
 }
 
-#historyHeading h1{
+#historyHeading h1 {
     margin: auto;
-    color:#fafafa;
-    font-size:4rem;
-    z-index:2;
-    margin-left:1rem;
-    
+    color: #fafafa;
+    font-size: 4rem;
+    z-index: 2;
+    margin-left: 1rem;
+
 }
+
 #historyBox {
     height: 100%;
     width: 64%;
-    background:#f4f6f8;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    
+    background: #f4f6f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
-#historyBox p{
-    font-weight:bold;
-    width:95%;
-    color:#12052b;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:justify;
-    font-size:1rem;
+#historyBox p {
+    font-weight: bold;
+    width: 95%;
+    color: #12052b;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 1rem;
 
 }
 
 
 #secondAboutSection {
-    background: #f0f8ff;
-    height: 80vh;
+    background: #e2e8ec;
+    height: 100vh;
     width: 100%;
-
+    color: #0a1b31;
 
 }
 
 #phylosophyBox {
+
     display: flex;
     justify-content: center;
+    height: 40vh;
 }
 
 #phylosophyBox div {
     width: 40%;
     border-bottom: 1px solid rgb(185, 177, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#phylosophyBox div h1 {
+    color: #7c3131;
+}
+
+#phylosophyBox div p {
+    text-align: justify;
+}
+
+#statsBoxHeading {
+
+    margin: 1rem;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#statsBoxHeading h2 {
+    color: #da2c2c;
 }
 
 #statsBox {
     display: flex;
-    justify-content:space-evenly;
-    margin-top:5rem;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    width: 100%;
 }
 
-#statsBox div {
-    width:25%;
+#individualStat {
+    width: 20%;
+
+    border-radius: 15px;
+    padding-left: 1rem;
+    height: 45%;
+    text-align: center;
+
+
+}
+
+#individualStat:hover {
+    width: 20%;
+    border-radius: 15px;
+    padding-left: 1rem;
+    height: 45%;
+    text-align: center;
+    background: #dddce8;
+
+
+}
+
+#individualStat p {
+    width: 95%;
 
 }
 
 #whoIsLucas {
-    height: 800px;
+    height: 120vh;
     width: 100%;
-    background: #fafafa;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#aboutLucas {
-    background: #dfd6d6;
-    width: 60%;
-    height: inherit;
+    background: #e2e8ec;
+    padding-top: 2rem;
 }
 
 #lucasImageContainer {
-
-    width: 60%;
-    height: inherit;
-
-}
-
-#lucasImage {
+    background: #abb1b9;
     background-image: url('../Media/lucasSnowImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -90px;
-    height: 500px;
-    border: 1px solid black;
-    border-radius: 50%;
-    margin: 100px auto;
-    width: 500px;
-    background-color: #f5f0f0;
+    width: 40%;
+    border-radius: 15px;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-.LucasHeading {
+#lucasMessage {
+    margin-top: 1rem;
+    width: 50%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#lucasMessage p {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: sans-serif, Arial, Helvetica;
+    color: #0a1b31;
+
+}
+
+#testimonials {
+    background: #f4f6f8;
+    padding: 1rem;
+    width:100%;
+    height:50vh;
+}
+
+.testimonials-heading {
     text-align: center;
-    color: black;
-    margin-bottom: 10px;
-
-
+    font-size: 2rem;
+    color: #1a1a1a;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
-#customerReviews {
-    background: #fafafa;
+.carousel {
+    border: 1px solid #e3dbdb;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial{
+    display:none;
 
 }
+.testimonial.active{
+    display:block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#prev {
+    position:absolute;
+    margin-right:1rem;
+    border-radius: 50%;
+    border: 1px solid rgb(224, 219, 219);
+    width: 12%;
+    height: 22%;
+    right: 100%;
+    bottom: 40%;
+    
+}
+
+#next {
+    margin-left:1rem;
+    border-radius: 50%;
+    border: 1px solid rgb(240, 231, 231);
+    width: 12%;
+    height: 22%;
+    position: absolute;
+    left: 100%;
+    bottom: 40%;
+}
+
+
 
 /*this portion of css code is for the contact page*/
 
