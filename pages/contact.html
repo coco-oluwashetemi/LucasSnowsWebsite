@@ -22,7 +22,7 @@
 
 <body id="contactBody">
 
-    
+
     <header id="Website-Header">
         <div id="imageIconContainer"></div>
         <h1>Snow Trails</h1>
@@ -36,7 +36,7 @@
             <a href="./about.html" aria-label="click here to go to our about page">
                 <p>About</p>
             </a>
-            
+
             <a href="./contact.html" aria-label="click here to go to our contact page">
                 <p>Contact</p>
             </a>
@@ -51,51 +51,69 @@
 
                 <!--<h2>Need any of our Services?</h2>-->
                 <h1>Get In Touch With Us </h1>
-                <form id="submitForm" target="blank" action="./somewhere">
-                    <div>
-                        <label for="firstName">Name </label><br>
-                        <div id="contactNameInput">
-                            <input id="firstName" type="text" name="firstName" placeholder="   First Name" required>
-                            <input id="MiddleName" type="text" name="firstName"
-                                placeholder="   Middle Name (optional)"><br>
-                            <input id="LastName" type="text" name="firstName" required placeholder="   Last Name"><br>
+                <form id="submitForm" target="bl
+                ank" action="./somewhere">
+                    <div id="collectNameSection">
+                        <div id="firstNameCollection">
+                            <label for="firstName">First Name</label>
+                            <input class="validated" id="firstName" type="text" name="firstName"
+                                placeholder="    Lucas">
+                            <p class="validator" id="firstNameValidator">Please this field is required</p>
+                        </div>
+                        <div id="middleNameCollection">
+                            <label for="middleName">middle Name</label>
+                            <input id="middleName" type="text" name="middleName" placeholder="  David (optional)">
+
+                        </div>
+                        <div id="lastNameCollection">
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" class="validated" type="text" name="lastName" placeholder="  Snow"
+                                required>
+                            <p class="validator" id="lastNameValidator">Please this field is required</p>
+                        </div>
+                    </div>
+                    <div id="collectAddressSection">
+                        <div id="address">
+                            <label for="Address">Address</label>
+                            <input id="AddressInput" type="text" class="validated" name="Address" required>
+                            <p class="validator" id="addressValidator">Please this field is required</p>
+                        </div>
+                    </div>
+                    <div id="countryPlusZip">
+                        <div id="countrySelection">
+                            <label for="countryOptions">Country</label>
+                            <select class="validated" id="countryOptions" placeholder="Country">
+                                <option value="" selected hidden disabled>Select a country</option>
+                            </select>
+                            <p class="validator" id="countrySelectionValidator">Please select a country</p>
+                        </div>
+                        <div id="zipInput">
+                            <label>Zip Code</label>
+                            <input id="zipCode" class="validated" type="text" placeholder="   Zip-Code">
+                            <p class="validator" id="zipCodeValidator">Please this field is required</p>
+                        </div>
+                    </div>
+                    <div id="phoneEmail">
+                        <div id="phoneCollection">
+                            <label for="phoneNumber">Telephone</label>
+                            <input type="text" id="phoneNumber" class="validated" required
+                                placeholder="   e.g +353899629075">
+                            <p class="validator" id="phoneValidator">Please this field is required</p>
+                        </div>
+
+                        <div id="emailCollection">
+                            <label for="emailAddress">Email Address</label>
+                            <input type="email" class="validated" placeholder="   e.g davidbayne@gmail.com"
+                                id="emailAddress" required>
+                            <p class="validator" id="emailValidator">Please this field is required</p>
                         </div>
                     </div>
                     <div>
-                        <label for="firstName">Address </label><br>
-                        <div id="contactAddress">
-                            <input id="address1" type="text" name="address1" placeholder="   Address Line 1"
-                                required><br>
-                            <input id="address2" type="text" name="address2"
-                                placeholder="   Address Line 2 (optional)"><br>
-                            <input id="address3" type="text" name="address3"
-                                placeholder="   Address Line 3 (optional)"><br>
-                            <div id="countryZip">
-                                <select id="countryOptions" placeholder="Country">
-                                    <option value="" selected hidden disabled>Select a country</option>
-                                </select>
-                                <input id="zipCode" type="text" placeholder="   Zip-Code"><br>
-                            </div>
-                        </div>
-                        <div id="phoneEmail">
-                            <div id="phoneCollection">
-                                <label for="phoneNumber">Telephone</label>
-                                <input type="text" id="phoneNumber" required placeholder="   e.g +353899629075">
+                        <label for="comments">Comments</label><br>
+                        <textarea id="comments"> </textarea>
+                    </div>
 
-                            </div>
-
-                            <div id="emailCollection">
-                                <label for="emailAddress">Email Address</label>
-                                <input type="email" placeholder="   e.g davidbayne@gmail.com" id="emailAddress">
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="comments">Comments</label><br>
-                            <textarea id="comments"> </textarea>
-                        </div>
-
-                        <button type="submit" id="contactSubmit">Submit</button>
+                    <button type="submit" id="contactSubmit">Submit</button>
 
                 </form>
             </div>
@@ -151,10 +169,7 @@
 
             <p>© 2025 Snow Trails Travel Agency | Designed by AED Team IE </p>
             <p>All rights reserved for Snow Trails Travels.</p>
-
-
             <p>Privacy Policy | Terms and Conditions</p>
-
 
         </div>
     </footer>
@@ -215,32 +230,73 @@
                 select.appendChild(option);
             });
 
+
+
         const phoneInput = document.getElementById("phoneNumber");
         const phoneChecker = /^\+\d{9,15}$/;
         const submit = document.getElementById('contactSubmit');
+        const Validators = document.querySelectorAll(".validator");
+        const inputs = document.querySelectorAll("input.validated");
+        const selectValid = document.querySelector("select.validated");
+        let validatePhoneNumber = false;
 
-        phoneChecker.addEventListener("input", () => {
-            const validatePhoneNumber = phoneChecker.test(phoneInput.value);
-            if (validatePhoneNumber == true) {
-
-            }
-            else {
-                alert("")
-            }
+        phoneInput.addEventListener("input", () => {
+            validatePhoneNumber = phoneChecker.test(phoneInput.value);
 
         })
 
 
         submit.addEventListener("click", () => {
-            if (validatePhoneNumber == true) {
+            let counter = 0;
+            for (let i = 0; i < Validators.length; i++) {
+                console.log("fire");
+               if (i == Validators.length - 2) {
+                    if (validatePhoneNumber == true && phoneInput.value.trim() !== "") {
+                        //proceed with submission
+                        inputs[inputs.length-2].setCustomValidity("");
+                    }
+                    else {
+                        Validators[Validators.length - 2].classList.add("active");
+                        Validators[Validators.length - 2].textContent = "please input a correct international number";
+                        inputs[inputs.length-2].setCustomValidity(" ");
+                    }
+                }
 
-            }
-            else {
-                alert("Please input a correct international phone number");
+                else if (i == Validators.length - 4) {
+                    if (selectValid.value.trim() !== "") {
+                        //proceed with submission
+                    }
+                    else {
+                        Validators[i].classList.add("active");
+                        Validators[i].textContent = "Please select a country from dropdown";
+                    }
+                }
+                else if(i == Validators.length - 1){
+                    if (inputs[inputs.length-1].value.trim() !== "") {
+                        //proceed with submission
+                        inputs[inputs.length-1].setCustomValidity("");
+                    }
+                    else {
+                        Validators[Validators.length - 1].classList.add("active");
+                        Validators[Validators.length - 1].textContent = "please input a correct emailAddress";
+                        inputs[inputs.length-1].setCustomValidity(" ");
+                    }
+                }
+                else {
+                    
+                    if (inputs[counter].value.trim() !== "") {
+                        //proceeds with submission
+                    }
+                    else {
+                        Validators[i].classList.add("active");
+                        Validators[i].textContent = "The above field is required";
+                    }
+                    counter++
+                }
+
             }
         })
-
-
+        /**/
 
 
 
