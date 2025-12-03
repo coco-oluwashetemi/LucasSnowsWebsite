@@ -254,6 +254,7 @@
                     if (validatePhoneNumber == true && phoneInput.value.trim() !== "") {
                         //proceed with submission
                         inputs[inputs.length-2].setCustomValidity("");
+                        Validators[Validators.length - 2].classList.remove("active");
                     }
                     else {
                         Validators[Validators.length - 2].classList.add("active");
@@ -265,6 +266,7 @@
                 else if (i == Validators.length - 4) {
                     if (selectValid.value.trim() !== "") {
                         //proceed with submission
+                        Validators[i].classList.remove("active");
                     }
                     else {
                         Validators[i].classList.add("active");
@@ -275,6 +277,7 @@
                     if (inputs[inputs.length-1].value.trim() !== "") {
                         //proceed with submission
                         inputs[inputs.length-1].setCustomValidity("");
+                        Validators[Validators.length - 1].classList.remove("active");
                     }
                     else {
                         Validators[Validators.length - 1].classList.add("active");
@@ -286,6 +289,7 @@
                     
                     if (inputs[counter].value.trim() !== "") {
                         //proceeds with submission
+                        Validators[i].classList.remove("active");
                     }
                     else {
                         Validators[i].classList.add("active");
